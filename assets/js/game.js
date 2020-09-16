@@ -22,7 +22,7 @@ var fightOrSkip = function() {
       
       return true;
     }
-  }    
+  }  
 }
 
 var fight = function(enemy) {
