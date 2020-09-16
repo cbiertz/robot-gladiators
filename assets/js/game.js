@@ -20,9 +20,9 @@ var fight = function(enemy) {
     }
 
     // remove enemy's health by subtracting the amount set in the playerInfo.Attack variable
-    var damage = randomNumber(playerInfo.Attack - 3, playerInfo.Attack);
+    var damage = randomNumber(playerInfo.attack - 3, playerInfo.attack);
 
-    enemy.health= Math.max(0, enemy.health - damage);
+    enemy.health = Math.max(0, enemy.health - damage);
 
     console.log(
       playerInfo.name + ' attacked ' + enemy.name + '. ' + enemy.name + ' now has ' + enemy.health + ' health remaining.'
@@ -151,7 +151,6 @@ var shop = function() {
 
 var playerInfo = {
   name: window.prompt("What is your robot's name?"),
-  health: 100,
   attack: 10,
   money: 10,
   reset: function() {
