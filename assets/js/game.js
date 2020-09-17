@@ -1,7 +1,7 @@
 var fightOrSkip = function() {
   // ask user if they'd liked to fight or run
   var promptFight = window.prompt('Would you like FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
-  
+
   promptFight = promptFight.toLowerCase();
 
   if(promptFight === "skip") {
